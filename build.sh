@@ -4,16 +4,16 @@
 mkdir square/stl
 
 # STL Exports
-openscad -o square/stl/basin_50x50.stl -p square/square.json -P Basin_50x50 --export-format asciistl square/square.scad 
-openscad -o square/stl/basin_100x100.stl -p square/square.json -P Basin_100x100 --export-format asciistl square/square.scad 
-openscad -o square/stl/basin_150x150.stl -p square/square.json -P Basin_150x150 --export-format asciistl square/square.scad 
-openscad -o square/stl/planter_50x50.stl -p square/square.json -P Planter_50x50 --export-format asciistl square/square.scad 
-openscad -o square/stl/planter_100x100.stl -p square/square.json -P Planter_100x100 --export-format asciistl square/square.scad 
-openscad -o square/stl/planter_150x150.stl -p square/square.json -P Planter_150x150 --export-format asciistl square/square.scad 
+for i in {50..300..50}
+do
+openscad -o "square/stl/Basin ${i}mm x ${i}mm.stl" -p square/parameters.json -P ${i}mmx${i}mm --export-format asciistl square/basin.scad
+
+openscad -o "square/stl/Planter ${i}mm x ${i}mm.stl" -p square/parameters.json -P ${i}mmx${i}mm --export-format asciistl square/planter.scad
+done
 
 # README Update
-SQUARE_BASIN_STL="$(cat square/stl/basin_100x100.stl)"
-SQUARE_PLANTER_STL="$(cat square/stl/planter_100x100.stl)"
+SQUARE_BASIN_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
+SQUARE_PLANTER_STL="$(cat 'square/stl/Planter 100mm x 100mm.stl')"
 
 README_TEMPLATE="$(cat README.md.template)"
 README="${README_TEMPLATE/"### SQUARE_BASIN_TEMPLATE ###"/$SQUARE_BASIN_STL}"

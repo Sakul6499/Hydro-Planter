@@ -1,34 +1,4 @@
-// Square hydro-wicked planter.
-// Size customizable via below parameters
-
-// << Parameters >>
-
-$width = 100;
-$depth = 100;
-$height = 50;
-
-$margin = 2;
-
-$connection = 5;
-
-$hole_dia = 4;
-
-$show_present = true;
-$show_print_basin = false;
-$show_print_planter = false;
-
-// << Modules >>
-
-module basin() {
-  color("cyan") difference() {
-    cube(size = [ $width, $depth, $height ], center = true);
-
-    // DIFF
-    translate([ 0, 0, $margin ])
-        cube(size = [ $width - $margin, $depth - $margin, $height + $margin ],
-             center = true);
-  }
-}
+include <parameters.scad>
 
 module planter() {
   union() {
@@ -93,28 +63,4 @@ module planter() {
     }
   }
 }
-
-// << Presenting >>
-
-if ($t != undef) {
-  // Animation!
-
-  translate([ $width / 2, $depth / 2, $height / 2 ]) basin();
-  translate([
-    $width / 2, $depth / 2,
-    $height / 2 + $height - $connection + $height - $height *
-    $t
-  ]) planter();
-} else {
-  // STL
-
-  if ($show_print_basin) {
-    basin();
-  }
-
-  if ($show_print_planter) {
-    planter();
-  }
-}
-
-// TODO: Floater
+planter();
