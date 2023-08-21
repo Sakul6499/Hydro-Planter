@@ -40,7 +40,7 @@ jobs:
           retention-days: 90
 
       - name: '[Square > Planter] OpenSCAD Build'
-        run: openscad -o square_planter.stl -p square.json -P Planter square.scad    
+        run: openscad -o square_planter.stl -p square.json -P Planter square.scad
 
       - name: '[Square > Planter] Upload'
         uses: actions/upload-artifact@v3.1.2
