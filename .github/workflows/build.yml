@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: square_basin
-          path: square_basin.stml
+          path: square_basin.stl
           if-no-files-found: error
           retention-days: 90
 
@@ -46,6 +46,6 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: square_planter
-          path: square_planter.stml
+          path: square_planter.stl
           if-no-files-found: error
           retention-days: 90
