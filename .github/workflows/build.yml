@@ -25,19 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Install OpenSCAD
+        run: sudo apt-get update && sudo apt-get install -y openscad
+
       - name: '[Square > Basin] OpenSCAD Build'
-        uses: pkoehlers/openscad-build-action@v1
-        with:
-          input-file: square.scad
-          output-file: square_basin.stl
-          customizer-parameter-file: 'square.json'
-          customizer-parameter-set: 'Basin'
+        run: openscad -o square_basin.stl -p square.json -P Basin square.scad  
 
       - name: '[Square > Planter] OpenSCAD Build'
-        uses: pkoehlers/openscad-build-action@v1
-        with:
-          input-file: square.scad
-          output-file: square_planter.stl
-          customizer-parameter-file: 'square.json'
-          customizer-parameter-set: 'Planter'
-            
+        run: openscad -o square_planter.stl -p square.json -P Planter square.scad    
