@@ -31,5 +31,21 @@ jobs:
       - name: '[Square > Basin] OpenSCAD Build'
         run: openscad -o square_basin.stl -p square.json -P Basin square.scad  
 
+      - name: '[Square > Basin] Upload'
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: square_basin
+          path: square_basin.stml
+          if-no-files-found: error
+          retention-days: 90
+
       - name: '[Square > Planter] OpenSCAD Build'
         run: openscad -o square_planter.stl -p square.json -P Planter square.scad    
+
+      - name: '[Square > Planter] Upload'
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: square_planter
+          path: square_planter.stml
+          if-no-files-found: error
+          retention-days: 90
