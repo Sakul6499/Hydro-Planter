@@ -13,9 +13,9 @@ $connection = 5;
 
 $hole_dia = 4;
 
-$show_present = true;
+$show_present = false;
 $show_print_basin = false;
-$show_print_planter = false;
+$show_print_planter = true;
 
 // << Modules >>
 
