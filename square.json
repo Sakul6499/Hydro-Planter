@@ -1,0 +1,16 @@
+{
+    "parameterSets":
+    {
+        "Basin": {
+            "show_present": "false",
+            "show_print_basin": "true",
+            "show_print_planter": "false"
+        },
+        "Planter": {
+            "show_present": "false",
+            "show_print_basin": "false",
+            "show_print_planter": "true"
+        }
+    },
+    "fileFormatVersion": "1"
+}
