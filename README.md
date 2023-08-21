@@ -3,7 +3,7 @@
 ## [Square Planter](square/)
 
 > **Planter**  
-> Go to STL: [50m x 50m](square/stl/Planter 50m x 50m.stl) [100m x 100m](square/stl/Planter 100m x 100m.stl) [150m x 150m](square/stl/Planter 150m x 150m.stl) [200m x 200m](square/stl/Planter 200m x 200m.stl) [250m x 250m](square/stl/Planter 250m x 250m.stl) [300m x 300m](square/stl/Planter 300m x 300m.stl)
+> Go to [STL folder](square/stl/)
 
 ```stl
 solid OpenSCAD_Model
@@ -3038,6 +3038,20 @@ solid OpenSCAD_Model
       vertex -3.88377 0.957262 22.5
     endloop
   endfacet
+  facet normal 0.354605 0.935016 -0
+    outer loop
+      vertex 2.27226 3.29193 -25.5
+      vertex 0.482146 3.97083 22.5
+      vertex 2.27226 3.29193 22.5
+    endloop
+  endfacet
+  facet normal 0.354605 0.935016 0
+    outer loop
+      vertex 0.482146 3.97083 22.5
+      vertex 2.27226 3.29193 -25.5
+      vertex 0.482146 3.97083 -25.5
+    endloop
+  endfacet
   facet normal 0.970941 -0.239318 0
     outer loop
       vertex 3.54182 -1.85889 22.5
@@ -3106,20 +3120,6 @@ solid OpenSCAD_Model
       vertex -1.41842 3.74006 22.5
       vertex 0.482146 3.97083 -25.5
       vertex -1.41842 3.74006 -25.5
-    endloop
-  endfacet
-  facet normal 0.354605 0.935016 -0
-    outer loop
-      vertex 2.27226 3.29193 -25.5
-      vertex 0.482146 3.97083 22.5
-      vertex 2.27226 3.29193 22.5
-    endloop
-  endfacet
-  facet normal 0.354605 0.935016 0
-    outer loop
-      vertex 0.482146 3.97083 22.5
-      vertex 2.27226 3.29193 -25.5
-      vertex 0.482146 3.97083 -25.5
     endloop
   endfacet
   facet normal -0.568064 -0.822984 0
@@ -3367,6 +3367,20 @@ solid OpenSCAD_Model
       vertex 0.927051 2.85317 -27.5
     endloop
   endfacet
+  facet normal -0.587784 0.809018 0
+    outer loop
+      vertex 2.42705 -1.76336 -27.5
+      vertex 0.927051 -2.85317 22.5
+      vertex 2.42705 -1.76336 22.5
+    endloop
+  endfacet
+  facet normal -0.587784 0.809018 0
+    outer loop
+      vertex 0.927051 -2.85317 22.5
+      vertex 2.42705 -1.76336 -27.5
+      vertex 0.927051 -2.85317 -27.5
+    endloop
+  endfacet
   facet normal 0.587784 0.809018 -0
     outer loop
       vertex -0.927051 -2.85317 -27.5
@@ -3423,20 +3437,6 @@ solid OpenSCAD_Model
       vertex -0.927051 -2.85317 -27.5
     endloop
   endfacet
-  facet normal -0.587784 0.809018 0
-    outer loop
-      vertex 2.42705 -1.76336 -27.5
-      vertex 0.927051 -2.85317 22.5
-      vertex 2.42705 -1.76336 22.5
-    endloop
-  endfacet
-  facet normal -0.587784 0.809018 0
-    outer loop
-      vertex 0.927051 -2.85317 22.5
-      vertex 2.42705 -1.76336 -27.5
-      vertex 0.927051 -2.85317 -27.5
-    endloop
-  endfacet
   facet normal 0.951057 -0.309017 0
     outer loop
       vertex -3 0 22.5
@@ -3455,7 +3455,7 @@ endsolid OpenSCAD_Model
 ```
 
 > **Basin**  
-> > Go to STL: [50m x 50m](square/stl/Basin 50m x 50m.stl) [100m x 100m](square/stl/Basin 100m x 100m.stl) [150m x 150m](square/stl/Basin 150m x 150m.stl) [200m x 200m](square/stl/Basin 200m x 200m.stl) [250m x 250m](square/stl/Basin 250m x 250m.stl) [300m x 300m](square/stl/Basin 300m x 300m.stl)
+> Go to [STL folder](square/stl/)
 
 ```stl
 solid OpenSCAD_Model
