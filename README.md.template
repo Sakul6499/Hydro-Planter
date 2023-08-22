@@ -2,6 +2,8 @@
 
 ## [Square Planter](square/)
 
+### Normal
+
 > **Planter**  
 > Go to [STL folder](square/stl/)
 
@@ -14,4 +16,35 @@
 
 ```stl
 ### SQUARE_BASIN_TEMPLATE ###
+```
+
+### Z-Rounded
+
+> **Planter**  
+> Go to [STL folder](square/stl/)
+
+```stl
+### SQUARE_PLANTER_ROUNDED_Z_TEMPLATE ###
+```
+
+> **Basin**  
+
+```stl
+### SQUARE_BASIN_ROUNDED_Z_TEMPLATE ###
+```
+
+### Fully-Rounded
+
+> **Planter**  
+> Go to [STL folder](square/stl/)
+
+```stl
+### SQUARE_BASIN_ROUNDED_ALL_TEMPLATE ###
+```
+
+> **Basin**  
+> Go to [STL folder](square/stl/)
+
+```stl
+### SQUARE_PLANTER_ROUNDED_ALL_TEMPLATE ###
 ```
