@@ -30,7 +30,8 @@ module planter() {
 
               // Connecting bit to outer shell
               translate([ 0, 0, $connection ])
-                  cube(size = [ $width, $depth, $connection ], center = true);
+                  cube(size = [ $width - .1, $depth - .1, $connection ],
+                       center = true);
             }
           }
         }
