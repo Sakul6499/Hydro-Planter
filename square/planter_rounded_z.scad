@@ -54,14 +54,14 @@ module planter() {
       }
     }
 
-    color("violet") translate([ 0, 0, -$height / 2 - $margin * 1.25 ]) {
-      difference() {
-        cylinder($height, $hole_dia, $hole_dia);
-        translate([ 0, 0, -$margin ])
-            cylinder($height + $margin * 2, $hole_dia - $margin * 0.5,
-                     $hole_dia - $margin * 0.5);
-      }
-    }
+    // color("violet") translate([ 0, 0, -$height / 2 - $margin * 1.25 ]) {
+    //   difference() {
+    //     cylinder($height, $hole_dia, $hole_dia);
+    //     translate([ 0, 0, -$margin ])
+    //         cylinder($height + $margin * 2, $hole_dia - $margin * 0.5,
+    //                  $hole_dia - $margin * 0.5);
+    //   }
+    // }
   }
 }
 planter();
