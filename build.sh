@@ -16,7 +16,7 @@ done
 
 # README Update
 SQUARE_BASIN_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
-SQUARE_BASIN_ROUNDED_Z_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
+SQUARE_PLANTER_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
 HEXAGON_BASIN_STL="$(cat 'hexagon/stl/Basin 100mm x 100mm.stl')"
 HEXAGON_PLANTER_STL="$(cat 'hexagon/stl/Planter 100mm x 100mm.stl')"
 
