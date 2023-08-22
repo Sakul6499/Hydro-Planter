@@ -6,9 +6,9 @@ mkdir square/stl
 # STL Exports
 for i in {50..300..50}
 do
-openscad -o "square/stl/Basin ${i}mm x ${i}mm.stl" -p square/parameters.json -P ${i}mmx${i}mm --export-format asciistl square/basin.scad
+openscad -o "square/stl/Basin ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl square/basin.scad
 
-openscad -o "square/stl/Planter ${i}mm x ${i}mm.stl" -p square/parameters.json -P ${i}mmx${i}mm --export-format asciistl square/planter.scad
+openscad -o "square/stl/Planter ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl square/planter.scad
 done
 
 # README Update
