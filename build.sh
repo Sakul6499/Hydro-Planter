@@ -12,6 +12,9 @@ openscad -o "square/stl/Planter ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}m
 
 openscad -o "hexagon/stl/Basin ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl hexagon/basin.scad
 openscad -o "hexagon/stl/Planter ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl hexagon/planter.scad
+
+openscad -o "cylinder/stl/Basin ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl cylinder/basin.scad
+openscad -o "cylinder/stl/Planter ${i}mm x ${i}mm.stl" -p parameters.json -P ${i}mmx${i}mm --export-format asciistl cylinder/planter.scad
 done
 
 # README Update
@@ -19,6 +22,8 @@ SQUARE_BASIN_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
 SQUARE_PLANTER_STL="$(cat 'square/stl/Planter 100mm x 100mm.stl')"
 HEXAGON_BASIN_STL="$(cat 'hexagon/stl/Basin 100mm x 100mm.stl')"
 HEXAGON_PLANTER_STL="$(cat 'hexagon/stl/Planter 100mm x 100mm.stl')"
+CYLINDER_BASIN_STL="$(cat 'cylinder/stl/Basin 100mm x 100mm.stl')"
+CYLINDER_PLANTER_STL="$(cat 'cylinder/stl/Planter 100mm x 100mm.stl')"
 
 README_TEMPLATE="$(cat README.md.template)"
 # << Square >>
@@ -27,6 +32,9 @@ README="${README/"### SQUARE_PLANTER_TEMPLATE ###"/$SQUARE_PLANTER_STL}"
 # << Hexagon >>
 README="${README/"### HEXAGON_BASIN_TEMPLATE ###"/$HEXAGON_BASIN_STL}"
 README="${README/"### HEXAGON_PLANTER_TEMPLATE ###"/$HEXAGON_PLANTER_STL}"
+# << Cylinder >>
+README="${README/"### CYLINDER_BASIN_TEMPLATE ###"/$CYLINDER_BASIN_STL}"
+README="${README/"### CYLINDER_PLANTER_TEMPLATE ###"/$CYLINDER_PLANTER_STL}"
 
 cat <<EOF > README.md
 $README
