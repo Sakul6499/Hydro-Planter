@@ -16,7 +16,7 @@ done
 
 # README Update
 SQUARE_BASIN_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
-SQUARE_PLANTER_STL="$(cat 'square/stl/Basin 100mm x 100mm.stl')"
+SQUARE_PLANTER_STL="$(cat 'square/stl/Planter 100mm x 100mm.stl')"
 HEXAGON_BASIN_STL="$(cat 'hexagon/stl/Basin 100mm x 100mm.stl')"
 HEXAGON_PLANTER_STL="$(cat 'hexagon/stl/Planter 100mm x 100mm.stl')"
 
@@ -25,7 +25,7 @@ README_TEMPLATE="$(cat README.md.template)"
 README="${README_TEMPLATE/"### SQUARE_BASIN_TEMPLATE ###"/$SQUARE_BASIN_STL}"
 README="${README/"### SQUARE_PLANTER_TEMPLATE ###"/$SQUARE_PLANTER_STL}"
 # << Hexagon >>
-README="${README/"### HEXAGON_PLANTER_TEMPLATE ###"/$HEXAGON_BASIN_STL}"
+README="${README/"### HEXAGON_BASIN_TEMPLATE ###"/$HEXAGON_BASIN_STL}"
 README="${README/"### HEXAGON_PLANTER_TEMPLATE ###"/$HEXAGON_PLANTER_STL}"
 
 cat <<EOF > README.md
